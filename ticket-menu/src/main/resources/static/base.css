@@ -1,0 +1,140 @@
+h1 {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+h2 {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.ticket {
+  margin-left: auto;
+  margin-right: auto;
+  width: 256px;
+  height: 386px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ticket h3 {
+  text-align: center;
+  font-family: sans-serif;
+  margin: 8px;
+  margin-bottom: 16px;
+}
+
+.ticket p {
+  font-family: sans-serif;
+  margin-top: 16px;
+  margin: 8px;
+}
+
+.vspace {
+  flex: 5 5 0px;
+}
+
+.ticket a {
+  text-decoration: none;
+  font-style: bold;
+  color: green;
+  font-family: sans-serif;
+}
+
+.noticket {
+  margin-left: auto;
+  margin-right: auto;
+  width: 256px;
+  height: 386px;
+  border-radius: 8px;
+  padding: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-top: 8px green solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.noticket p {
+  flex: 0 0 256px;
+  text-align: center;
+  color: gray;
+  text-size: 20px;
+  font-style: italic;
+  font-family: sans-serif;
+}
+
+.noticket p a {
+  text-decoration: none;
+  font-style: bold;
+  color: green;
+  font-family: sans-serif;
+}
+
+.low-priority {
+  border-top: dodgerblue 8px solid;
+}
+
+.medium-priority {
+  border-top: lawngreen 8px solid;
+}
+
+.high-priority {
+  border-top: gold 8px solid;
+}
+
+.important-priority {
+  border-top: orange 8px solid;
+}
+
+.critical-priority {
+  border-top: crimson 8px solid;
+}
+
+.low-priority-txt {
+  color: dodgerblue;
+}
+
+.medium-priority-txt {
+  color: lawngreen;
+}
+
+.high-priority-txt {
+  color: gold;
+}
+
+.important-priority-txt {
+  color: orange;
+}
+
+.critical-priority-txt {
+  color: crimson;
+}
+
+.form {
+  margin-left: auto;
+  margin-right: auto;
+  width: 256px;
+  height: 386px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form p {
+  flex: 0 0 256px;
+}
+
+.form textarea {
+  min-width: 250px;
+  min-height: 250px;
+  width: 250px;
+  height: 250px;
+  max-width: 250px;
+  max-height: 250px;
+}

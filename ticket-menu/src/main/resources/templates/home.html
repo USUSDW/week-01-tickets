@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Z-Tech: Tickets</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="base.css"/>
+</head>
+<body>
+<h1>Z-Tech Tickets</h1>
+<h2>Next Ticket</h2>
+<div th:if="${#ctx.containsVariable('ticket')}" class="ticket" th:classappend="${ticket.priority.toString().toLowerCase() + '-priority'}">
+  <h3 th:text="${'Ticket ' + ticket.id}"></h3>
+  <p th:text="${'Priority: ' + ticket.priority.toString().substring(0, 1) + ticket.priority.toString().substring(1).toLowerCase()}" th:classappend="${ticket.priority.toString().toLowerCase() + '-priority-txt'}"></p>
+  <p th:text="${ticket.subject}"></p>
+  <div class="vspace"></div>
+  <a th:href="@{/nextTicket}">Resolve</a>
+</div>
+<div th:unless="${#ctx.containsVariable('ticket')}" class="noticket">
+  <p>No tickets. <a th:href="@{/addTicket}">Add one?</a></p>
+</div>
+</body>
+</html>

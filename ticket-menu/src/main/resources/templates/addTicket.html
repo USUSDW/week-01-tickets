@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Z-Tech: Add Ticket</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="base.css"/>
+</head>
+<body>
+<h1>Add a Ticket</h1>
+<div class="form">
+  <form id="form" action="#" th:action="@{/addTicket}" th:object="${ticketData}" method="post">
+    <p>Priority: <select name="priority">
+      <option th:each="priority : ${T(com.ztech.tickets.Priority).values()}"
+              th:value="${priority}" th:text="${priority.toString()}"></option>
+    </select>
+    </p>
+    <p>Subject:</p>
+    <p><textarea th:field="*{subject}" form="form"></textarea></p>
+    <div class="vspace"></div>
+    <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+  </form>
+</div>
+</body>
+</html>
