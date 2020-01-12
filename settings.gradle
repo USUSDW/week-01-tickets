@@ -1,3 +1,4 @@
 include 'ticket-api'
 include 'ticket-menu'
+include 'examples'
 
