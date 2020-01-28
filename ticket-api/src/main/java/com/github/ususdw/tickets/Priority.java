@@ -1,4 +1,4 @@
-package com.ztech.tickets;
+package com.github.ususdw.tickets;
 
 /**
  * Removes priority magic numbers and replaces them with more human-readable versions.

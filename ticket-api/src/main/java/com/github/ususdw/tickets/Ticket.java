@@ -1,4 +1,4 @@
-package com.ztech.tickets;
+package com.github.ususdw.tickets;
 
 import java.util.Date;
 

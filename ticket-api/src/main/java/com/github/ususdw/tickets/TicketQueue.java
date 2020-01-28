@@ -1,6 +1,8 @@
-package com.ztech.tickets;
+package com.github.ususdw.tickets;
 
+import java.util.Comparator;
 import java.util.LinkedList;
+import java.util.PriorityQueue;
 import java.util.Queue;
 
 /**
@@ -11,7 +13,8 @@ public class TicketQueue {
 
     //TODO: Update me!
     /** Holds all of our tickets. The first ones are the most important. */
-    private Queue<Ticket> ticketQueue = new LinkedList<>();
+//    private Queue<Ticket> ticketQueue = new LinkedList<>();
+    private PriorityQueue<Ticket> ticketQueue = new PriorityQueue<>(Comparator.comparingInt(i -> i.priority.priority));
 
     /**
      * Adds a ticket to the queue.
