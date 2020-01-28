@@ -13,8 +13,7 @@ public class TicketQueue {
 
     //TODO: Update me!
     /** Holds all of our tickets. The first ones are the most important. */
-//    private Queue<Ticket> ticketQueue = new LinkedList<>();
-    private PriorityQueue<Ticket> ticketQueue = new PriorityQueue<>(Comparator.comparingInt(i -> i.priority.priority));
+    private Queue<Ticket> ticketQueue = new LinkedList<>();
 
     /**
      * Adds a ticket to the queue.
