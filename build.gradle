@@ -5,7 +5,7 @@ plugins {
 group 'com.github.hhenrichsen'
 version '1.0.0'
 
-sourceCompatibility = 1.11
+sourceCompatibility = 1.10
 
 repositories {
     mavenCentral()
