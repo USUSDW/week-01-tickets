@@ -10,7 +10,7 @@
 <div class="form">
   <form id="form" action="#" th:action="@{/addTicket}" th:object="${ticketData}" method="post">
     <p>Priority: <select name="priority">
-      <option th:each="priority : ${T(com.ztech.tickets.Priority).values()}"
+      <option th:each="priority : ${T(com.github.ususdw.tickets.Priority).values()}"
               th:value="${priority}" th:text="${priority.toString()}"></option>
     </select>
     </p>

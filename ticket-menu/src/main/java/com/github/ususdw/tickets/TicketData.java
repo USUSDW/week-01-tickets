@@ -1,4 +1,4 @@
-package com.ztech.tickets;
+package com.github.ususdw.tickets;
 
 public class TicketData {
     public String subject;

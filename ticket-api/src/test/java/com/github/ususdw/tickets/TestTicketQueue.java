@@ -1,4 +1,4 @@
-package com.ztech.tickets;
+package com.github.ususdw.tickets;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
@@ -43,11 +43,11 @@ public class TestTicketQueue {
         queue.addToQueue(medium2);
         queue.addToQueue(low);
 
-        assertEquals(important, queue.getNext());
-        assertEquals(high, queue.getNext());
-        assertEquals(medium1, queue.getNext());
-        assertEquals(medium2, queue.getNext());
-        assertEquals(low, queue.getNext());
+        assertEquals(important.priority, queue.getNext().priority);
+        assertEquals(high.priority, queue.getNext().priority);
+        assertEquals(medium1.priority, queue.getNext().priority);
+        assertEquals(medium2.priority, queue.getNext().priority);
+        assertEquals(low.priority, queue.getNext().priority);
     }
 
     @Test
