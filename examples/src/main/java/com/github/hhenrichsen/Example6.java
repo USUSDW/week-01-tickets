@@ -17,8 +17,11 @@ public class Example6 {
                     random.nextInt(50) + 1));
         }
 
-        // Sort the boxes using a comparator and a function reference.
-        boxes.sort(Comparator.comparingInt(Box::calcVolume));
+        // Sort the boxes using a comparator and a Single Abstract Method lambda.
+        // Note: I apply the suggestion for this one in the next example, but this is another way we can consider
+        // extracting things to base sorts off of. If we wanted to do some more complex computations, like take both
+        // surface area and volume into account, this would be the way to go.
+        boxes.sort(Comparator.comparingInt(i -> i.calcVolume()));
 
         // Show the results.
         for (var box : boxes) {

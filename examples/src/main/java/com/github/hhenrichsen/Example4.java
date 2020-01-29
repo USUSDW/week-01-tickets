@@ -3,9 +3,8 @@ package com.github.hhenrichsen;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.Random;
-import java.util.function.ToIntFunction;
 
-public class Example4 implements ToIntFunction<Box> {
+public class Example4 {
     private static final Random random = new Random();
 
     public static void main(String[] args) {
@@ -18,8 +17,10 @@ public class Example4 implements ToIntFunction<Box> {
                     random.nextInt(50) + 1));
         }
 
-        // Compare the boxes using an Integer Extractor defined on this class.
-        boxes.sort(Comparator.comparingInt(new Example4()));
+        // Sort the boxes using a comparator that we provide in the BoxComparator class.
+        // Comparators take two of whatever type we give it, and compare them. Using integers, this is normally done
+        // by subtracting the values.
+        boxes.sort(new BoxComparator());
 
         // Show the results.
         for (var box : boxes) {
@@ -27,17 +28,4 @@ public class Example4 implements ToIntFunction<Box> {
         }
     }
 
-    /**
-     * Extracts an integer from a Box to compare.<br><br>
-     *
-     * See:<br>
-     * <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Comparator.html">Comparator</a><br>
-     * <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/ToIntFunction.html">Comparator</a><br>
-     *
-     * @param box The box to extract an integer from.
-     * @return An integer for Comparator to compare other boxes with.
-     */
-    public int applyAsInt(Box box) {
-        return box.calcVolume();
-    }
 }

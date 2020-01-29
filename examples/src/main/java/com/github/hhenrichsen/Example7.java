@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.Random;
 
-public class Example5 {
+public class Example7 {
     private static final Random random = new Random();
 
     public static void main(String[] args) {
@@ -17,13 +17,12 @@ public class Example5 {
                     random.nextInt(50) + 1));
         }
 
-        // Compare the boxes using an Integer Extractor defined on BoxExtractor.
-        boxes.sort(Comparator.comparingInt(new BoxExtractor()));
+        // Sort the boxes using a comparator and a function reference.
+        boxes.sort(Comparator.comparingInt(Box::calcVolume));
 
         // Show the results.
         for (var box : boxes) {
             System.out.println(box);
         }
     }
-
 }
