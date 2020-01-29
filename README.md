@@ -5,11 +5,11 @@ Week 1: Ticketing System
 
 ## Introduction
 
-Welcome, new Z-Tech intern! You've shown great promise, and our ticket system needs some help. Right
+Welcome, new intern! You've shown great promise, and our ticket system needs some help. Right
 now, our system takes tickets and gives them back to us in the order that they were put in the 
 system. We want to address issues in triage-order instead of the way they are right now. Can you 
 help us build a solution? The current class is set up 
-[here](ticket-api/src/main/java/com/ztech/tickets/TicketQueue.java).
+[here](ticket-api/src/main/java/com/github/ususdw/tickets/TicketQueue.java).
 
 ## Running the Project
 
