@@ -1,12 +1,12 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-  <title>Z-Tech: Tickets</title>
+  <title>SDW Tickets</title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <link rel="stylesheet" type="text/css" href="base.css"/>
 </head>
 <body>
-<h1>Z-Tech Tickets</h1>
+<h1>SDW Tickets</h1>
 <h2>Next Ticket</h2>
 <div th:if="${#ctx.containsVariable('ticket')}" class="ticket" th:classappend="${ticket.priority.toString().toLowerCase() + '-priority'}">
   <h3 th:text="${'Ticket ' + ticket.id}"></h3>
