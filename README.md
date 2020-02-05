@@ -14,7 +14,7 @@ help us build a solution? The current class is set up
 ## Running the Project
 
 ### IntelliJ
-Look on the left side of the screen for a gradle menu with an icon of an elephant. If there is 
+Look on the right side of the screen for a gradle menu with an icon of an elephant. If there is 
 nothing contained in the menu, click the plus button and add the `build.gradle` file in the base 
 folder of this project.
 
